@@ -1,0 +1,44 @@
+package com.anand.HibernateOrm.embeddable;
+
+import javax.persistence.Embeddable;
+
+/**
+ * @embedd
+ * @author DELL
+ *
+ */
+
+@Embeddable 
+public class Certificate {
+
+	private String course;
+	
+	private String duration;
+	
+	 
+
+	public String getCourse() {
+		return course;
+	}
+
+	public void setCourse(String course) {
+		this.course = course;
+	}
+
+	public String getDuration() {
+		return duration;
+	}
+
+	public void setDuration(String duration) {
+		this.duration = duration;
+	}
+
+	@Override
+	public String toString() {
+		return "Certificate [course=" + course + ", duration=" + duration + "]";
+	}
+
+	
+	
+	
+}
